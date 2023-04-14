@@ -13,9 +13,9 @@ from utils.dataloader import make_data_loader
 from utils.logger import setup_logger
 from utils.tokenizer import BOS, tokenizer
 
-from modecap10a.config import _C as cfg
-from modecap10a.dataset import CaptionDataset, collate_fn
-from modecap10a.model import CodeBook, Decoder, ImgEncoder
+from modecap.config import _C as cfg
+from modecap.dataset import CaptionDataset, collate_fn
+from modecap.model import CodeBook, Decoder, ImgEncoder
 
 
 def test(cfg, modules, data_loader, device):
